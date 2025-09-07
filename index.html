@@ -1,356 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Valand Darshan Landing page </title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/johndoe.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Darshan Valand — Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google font + icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity=""
+    crossorigin="anonymous" />
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/valand.darshan.9/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/valand-darshan-672823259/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/er_darshan_sharma/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/darshanvaland"><i class="ti-github" aria-hidden="true"></i></a></li>
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Valand Darshan</h1>
-                <h6 class="header-mono" >Software Developer | Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i><a href="Resume.pdf" download class="text-light" >Print Resume</a></button>
-            </div>
+
+<body>
+
+  <div class="wrap">
+    <!-- header -->
+    <header class="top">
+      <div class="brand">
+        <img src="assets/imgs/avatar.jpg" alt="Darshan" onerror="this.style.display='none'">
+        <div>
+          <h1>Darshan Valand</h1>
+          <div style="font-size:13px; color:var(--muted)">Software Developer — Python &amp; Laravel</div>
         </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary" id="resumeBtn" href="Resume.pdf" download style="margin-left:14px"> <i
+            class="fa-solid fa-download"></i> Resume</a>
+        <button id="themeToggle" class="btn btn-ghost" title="Toggle theme" style="margin-left:10px"><i
+            class="fa-solid fa-moon"></i></button>
+      </nav>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Valand Darshan</h5>
-                        <div class="brand-subtitle">Software Developer | Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link"></a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Hi — I'm <span style="color:var(--accent)">Darshan</span>, a Software Developer</h2>
+        <p>I build fast, reliable web applications using <strong>Laravel</strong> and <strong>Python</strong> (Django /
+          Flask). I focus on clean code, measurable results, and shipping product features that matter.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+          <a class="btn btn-ghost" href="#projects"><i class="fa-solid fa-briefcase"></i> See Projects</a>
         </div>
-    </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">I am a Software Developer , My most intrest in python Languages with their framework & Also working in Php and their framework. </p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i> <a href="Resume.pdf" download>Download My CV</a></button>
+
+        <div class="hero-cards">
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+            <div class="card-content">
+              <div class="title">3+ years</div>
+              <div class="subtitle">building web apps</div>
             </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 14/6/2001</li>
-                    <li><span>Email</span> : darshanvaland143@gmail.com</li>
-                    <li><span>Phone</span> : <a href="tel:+918238270948">+91 8238270948</a></li>
-                    <li><span>Address</span> :Virpur,Mahisager,Gujrat,India</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/valand.darshan.9/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link text-link" href="https://www.linkedin.com/in/valand-darshan-672823259/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <!-- <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
-                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/er_darshan_sharma/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/darshanvaland"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
+          </div>
+
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-code"></i></div>
+            <div class="card-content">
+              <div class="title">Python & Laravel</div>
+              <div class="subtitle">APIs & E-commerce</div>
             </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Create a web Development.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>App Development</h6>
-                        <p class="subtitle">Create a App Development.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>learner very fast</h6>
-                        <p class="subtitle">New working method learn.</p>
-                        <hr>
-                    </div>
-                </div>
+          </div>
+
+          <div class="card">
+            <div class="icon"><i class="fa-solid fa-people-roof"></i></div>
+            <div class="card-content">
+              <div class="title">Available</div>
+              <div class="subtitle">Freelance & Full-time</div>
             </div>
+          </div>
         </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="block">
+      <div class="section-title">
+        <h3>About Me</h3>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h4 style="margin-top:0">Who I am</h4>
+          <p style="color:var(--muted)">I am a software developer experienced in Python (Django/Flask) and PHP
+            (Laravel). I build production-ready applications — e-commerce, hotel management systems, APIs, dashboards —
+            focusing on performance and clean architecture.</p>
+
+          <ul class="info-list" style="margin-top:12px; padding-left:14px">
+            <li><strong>Location:</strong> Gujarat, India</li>
+            <li><strong>Email:</strong> <a href="mailto:darshanvaland143@gmail.com"
+                style="color:var(--muted)">darshanvaland143@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918238270948" style="color:var(--muted)">+91 8238270948</a></li>
+            <li><strong>Portfolio:</strong> <a href="https://darshanvaland.github.io/portfolio/"
+                style="color:var(--muted)">darshanvaland.github.io</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="card skills">
+            <h4 style="margin-top:0">Skills</h4>
+            <div class="skill">
+              <div style="display:flex; justify-content:space-between"><strong>Laravel</strong><span
+                  style="color:var(--muted)">85%</span></div>
+              <div class="bar">
+                <div class="fill" style="width:85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div style="display:flex; justify-content:space-between"><strong>Python</strong><span
+                  style="color:var(--muted)">80%</span></div>
+              <div class="bar">
+                <div class="fill" style="width:80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div style="display:flex; justify-content:space-between"><strong>JavaScript</strong><span
+                  style="color:var(--muted)">65%</span></div>
+              <div class="bar">
+                <div class="fill" style="width:65%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div style="display:flex; justify-content:space-between"><strong>SQL</strong><span
+                  style="color:var(--muted)">75%</span></div>
+              <div class="bar">
+                <div class="fill" style="width:75%"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="block">
+      <section id="experience" class="block">
+        <div class="section-title">
+          <h3>Experience & Education</h3>
+          <div class="accent-line"></div>
+        </div>
+
+        <!-- Removed inline style -->
+        <div class="exp-edu-grid">
+
+          <!-- Work Experience -->
+          <div class="card">
+            <h4 class="sub-title">Work Experience</h4>
+            <div class="timeline">
+              <div class="item">
+                <span class="dot"></span>
+                <strong>Software Developer</strong>
+                <div class="meta">Intelliworkz Business Solutions Pvt. Ltd. • July 2025 – Present</div>
+                <p>Developing and maintaining scalable web applications using Laravel and Python.
+                  Built custom admin panels, optimized APIs for high performance, and collaborated
+                  with teams to deliver client-focused solutions on time.</p>
+              </div>
+              <div class="item">
+                <span class="dot"></span>
+                <strong>Laravel Developer</strong>
+                <div class="meta">Absolute Web • Nov 2024 – July 2025</div>
+                <p>Built Laravel apps, REST APIs, and implemented CI/CD pipelines.</p>
+              </div>
+              <div class="item">
+                <span class="dot"></span>
+                <strong>Jr. PHP Developer</strong>
+                <div class="meta">Cyblance • May 2023 – Dec 2023</div>
+                <p>E-commerce features, Laravel & Flask support.</p>
+              </div>
+              <div class="item">
+                <span class="dot"></span>
+                <strong>Python/Django Intern</strong>
+                <div class="meta">BrainyBeam • Jun 2022 – Jan 2023</div>
+                <p>CRUD apps, admin tooling, and API endpoints.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="card">
+            <h4 class="sub-title">Education</h4>
+            <div class="edu-list">
+              <div class="edu-item">
+                <strong>B.Tech — Computer Engineering</strong>
+                <div class="meta">Merchant Engineering College • 2022 – Present</div>
+              </div>
+              <div class="edu-item">
+                <strong>Diploma — Computer Engineering (SPI 8.01)</strong>
+                <div class="meta">Government Polytechnic Himmatnagar • 2019 – 2022</div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="languages">
+              <h4 class="sub-title">Languages</h4>
+              <div class="lang-list">
+                <strong>English</strong> (working) <br><br>
+                <strong>Hindi</strong> (fluent) <br><br>
+                <strong>Gujarati</strong> (native)
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+      <section id="projects" class="block">
+        <div class="section-title">
+          <h3>Featured Projects</h3>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project" data-id="p1" tabindex="0" role="button" aria-pressed="false">
+            <img src="assets/imgs/elegancebymonica.png" alt="E-commerce">
+            <div class="p-body">
+              <div class="p-title">E-Commerce Website</div>
+              <div class="p-tech">Laravel • MySQL • Front-end Tech</div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project" data-id="p2" tabindex="0" role="button">
+            <img src="assets/imgs/hotelmanagement.png" alt="Hotel">
+            <div class="p-body">
+              <div class="p-title">Hotel Management</div>
+              <div class="p-tech">Laravel • MySQL • Front-end Tech</div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project" data-id="p3" tabindex="0" role="button">
+            <img src="assets/imgs/yourcarintocash.png" alt="Car Sales">
+            <div class="p-body">
+              <div class="p-title">Car Sales Portal</div>
+              <div class="p-tech">Python • Flask • Tailwind</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="block">
+        <div class="section-title">
+          <h3>Contact</h3>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact">
+            <h4 style="margin-top:0">Let's talk</h4>
+            <p class="info">Interested in hiring or want to chat about a project? I'm available for freelance &
+              full-time opportunities.</p>
+            <div style="margin-top:12px">
+              <div class="info"><i class="fa-solid fa-envelope"></i> <a href="mailto:darshanvaland143@gmail.com"
+                  style="color:var(--muted)">darshanvaland143@gmail.com</a></div>
+              <div class="info" style="margin-top:8px"><i class="fa-solid fa-phone"></i> <a href="tel:+918238270948"
+                  style="color:var(--muted)">+91 8238270948</a></div>
+
+              <div style="margin-top:12px" class="socials">
+                <a href="https://github.com/darshanvaland" target="_blank" rel="noreferrer"><i
+                    class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/valand-darshan-672823259/" target="_blank" rel="noreferrer"><i
+                    class="fa-brands fa-linkedin"></i></a>
+                <a href="https://darshanvaland.github.io/portfolio/" target="_blank" rel="noreferrer"><i
+                    class="fa-solid fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 style="margin-top:0">Send a quick message</h4>
+            <!-- Simple contact form that opens mail client -->
+            <form id="contactForm">
+              <div style="display:flex; gap:8px; margin-bottom:8px">
+                <input name="name" placeholder="Your name" required
+                  style="flex:1; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit">
+                <input name="email" placeholder="Email" required
+                  style="flex:1; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit">
+              </div>
+              <textarea name="message" placeholder="Project brief / message" required
+                style="width:100%; padding:10px; min-height:110px; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"></textarea>
+              <div style="margin-top:10px; display:flex; gap:8px;">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <a class="btn btn-ghost" href="Resume.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        &copy; <span id="year"></span> Darshan Valand • Built with ❤️
+      </footer>
+  </div>
+
+  <!-- Modal template (will be cloned) -->
+  <template id="modalTpl">
+    <div class="modal-backdrop" role="dialog" aria-modal="true">
+      <div class="modal modalcss">
+        <div class="m-body">
+          <div class="m-left"><img src="" alt=""></div>
+          <div class="m-content">
+            <h3 class="m-title"></h3>
+            <p class="m-blurb" style="color:var(--muted)"></p>
+            <div style="margin-top:10px" class="m-tech"></div>
+            <ul class="m-bullets" style="color:var(--muted); margin-top:12px; padding-left:18px"></ul>
+            <div style="margin-top:12px; display:flex; gap:8px">
+              <a class="btn btn-primary m-live" target="_blank" rel="noreferrer"><i
+                  class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              <!-- <a class="btn btn-ghost m-code" target="_blank" rel="noreferrer"><i class="fa-solid fa-code"></i> Code</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Expertise</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">05-2023 - 12-2023</h6>
-                            <P>Jr.PHP Developer</P>
-                            <P class="subtitle">I have joined as Jr.PHP Developer in Cyblance Technologies Pvt.Ltd. is located in Ahemdabad But I totaly worked in Python and Flask freamework .</P>
-                            <hr>
-                            <h6 class="title text-danger">06-2022 - 01-2023</h6>
-                            <P>Intern</P>
-                            <P class="subtitle">I have attend the intern  ship in BrainyBeam Technologies Pvt.Ltd is located to Ahemdabad with fron-end and backend using Python and Django Languages.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.Tech Computer Engineering</P>
-                            <P class="subtitle">I am currently studeying in B.tech in Computer Engineering i have start in 2022 and present.</P>
-                            <hr>
-                            <h6 class="title text-danger">2019 - 2022</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">I have completed my diploma in Computer Engineering on 2022 with last semester SPI: 8.01 .</P>
-                            <hr>
-                            <!-- <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P> -->
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>hTML5 &amp; CSS3</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Python</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <!-- <h6>Tempora</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>English</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Hindi</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Gujrati</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  </template>
 
-   
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Custom Website Development</h5>
-                            <P class="subtitle">Crafting bespoke websites from scratch to ensure they align perfectly with your brand identity and business goals. Using the latest web technologies such as HTML5, CSS3, and JavaScript for a responsive and interactive user experience.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">E-Commerce Solutions</h5>
-                            <P class="subtitle">Developing robust e-commerce platforms to help you sell products and services online. Integrating payment gateways, shopping carts, and inventory management systems for seamless operations.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Web Application Development</h5>
-                            <P class="subtitle">Building powerful web applications that enhance your business processes and engage users effectively. Utilizing frameworks like React, Angular, or Vue.js for a modern and efficient front-end experience.</P>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg">Hire me</button>
-        </div>
-    </section>
-
-    <div class="section contact" id="contact">
-        <!-- <div id="map" class="map"></div> -->
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a href="tel:+918238270948">+91 8238270948</a> </span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">Virpur,Mahisager,Gujrat,India.</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">darshanvaland143@gmail.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/valand.darshan.9/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/valand-darshan-672823259/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/er_darshan_sharma/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/darshanvaland"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By Darshan
-            </p>
-        </div>
-    </footer>
-
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-
+  <script src="assets/js/new.js"></script>
 </body>
+
 </html>
