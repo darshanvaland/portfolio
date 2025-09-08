@@ -659,3 +659,62 @@ header.top nav .btn {
     padding: 8px 10px;
   }
 }
+/* Contact Section Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Contact card styles */
+.contact-grid .card {
+  padding: 20px;
+  border-radius: 14px;
+  background: var(--card);
+}
+
+/* Contact info text */
+.contact-grid .info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-grid .info i {
+  color: var(--accent);
+}
+
+/* Social icons */
+.contact-grid .socials {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.contact-grid .socials a {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.contact-grid .socials a:hover {
+  color: var(--accent);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+
+  .contact-grid .card {
+    padding: 16px; /* reduce padding on small screens */
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    font-size: 14px; /* smaller input text for mobile */
+  }
+}
